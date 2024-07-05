@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #323153;
+    background-color: #98B4D4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +42,7 @@ button{
     width: 30%;
     border-radius: 50px;
     border: none;
-    background-color: #108D7D;
+    background-color: #5783db;
     color: white;
 }
 #result{
