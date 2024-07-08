@@ -1,4 +1,5 @@
 async function shortURL() {
+  console.log("function running successfully")
   const url = document.getElementById("url").value;
   const resultDiv = document.getElementById("result");
   resultDiv.innerHTML = "Shortening URL...";
