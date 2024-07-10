@@ -12,6 +12,14 @@ async function shortURL() {
       const data = await response.text();
       resultDiv.innerHTML = `
                 Shortened URL: <a href="${data}" target="_blank">${data}</a>`;
+              // Create download link
+        const downloadLink = document.createElement('a');
+        downloadLink.href = `data:text/plain;charset=utf-8,${encodeURIComponent(data)}`;
+        downloadLink.download = 'shortened_url.txt';
+        downloadLink.textContent = 'Download Shortened URL';
+        downloadDiv.innerHTML = ''; // Clear previous content
+        downloadDiv.appendChild(downloadLink);
+  
 
       // Show success toast notification
       toastr.success("URL successfully shortened!", "Success", {
