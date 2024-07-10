@@ -1,52 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>URL Shortener</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="card">
-        <div class="card-header text-center">
-          <h2>URL Shortener</h2>
-        </div>
-        <div class="card-body">
-          <form id="url-form">
-            <div class="form-group">
-              <!-- <label for="url">Enter URL</label> -->
-              <input
-                type="url"
-                class="form-control"
-                id="url"
-                placeholder="Enter Your URL"
-                required
-              />
-            </div>
-            <button
-              type="button"
-              class="btn btn-primary btn-block"
-              onclick="shortURL()"
-            >
-              Shorten URL
-            </button>
-          </form>
-          <div id="result" class="mt-4"></div>
-           <div id="download" class="mt-4"></div> <!-- Placeholder for download link -->
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-header text-center">
+        <h2>URL Shortener</h2>
+      </div>
+      <div class="card-body">
+        <form id="url-form">
+          <div class="form-group">
+            <!-- <label for="url">Enter URL</label> -->
+            <input
+              type="url"
+              class="form-control"
+              id="url"
+              placeholder="Enter Your URL"
+              required
+            />
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary btn-block"
+            onclick="shortURL()"
+          >
+            Shorten URL
+          </button>
+        </form>
+        <div id="result" class="mt-4"></div>
+        <div id="download" class="mt-4"></div> <!-- Placeholder for download link -->
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script src="Script.js"></script>
-  </body>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="Script.js"></script>
+</body>
 </html>
+
